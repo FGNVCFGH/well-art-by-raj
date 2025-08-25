@@ -79,13 +79,13 @@
     </section>
 
     <!-- ========== CONTACT FORM ========== -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <form>
+    <section id="contact">
+        <h2 class="contact-title">Contact Me</h2>
+        <form class="contact-form">
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
             <textarea placeholder="Write your message..." required></textarea>
-            <button type="submit">Send Message</button>
+            <button type="submit" class="send-btn">Send Message</button>
         </form>
     </section>
 
@@ -93,13 +93,77 @@
     <footer>
         <p>© 2025 Raj Well Arts | Designed by Raj</p>
         <div class="socials">
-            <a href="#">🌐</a>
-            <a href="#">📷</a>
-            <a href="#">🐦</a>
-            <a href="#">▶️</a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/919099383049" target="_blank" class="social whatsapp" title="WhatsApp">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/r_panchal_192856?igsh=MXNwbTU5azI0aGdzZA==" target="_blank" class="social instagram" title="Instagram">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+            </a>
+            <!-- Optional: Twitter -->
+            <a href="https://x.com/Rajpanchal1928" class="social twitter" title="Twitter">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+            </a>
+            <!-- Optional: YouTube -->
+            <a href="https://www.youtube.com/@Veil_of_Darkness.0" class="social youtube" title="YouTube">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+            </a>
         </div>
     </footer>
+
+    <style>
+        /* Footer Base */
+        footer {
+            background: #0d0d0d;
+            color: #fff;
+            text-align: center;
+            padding: 25px 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Social Icons Container */
+        footer .socials {
+            margin-top: 15px;
+        }
+
+        /* Individual Icons */
+        footer .social {
+            display: inline-block;
+            margin: 0 12px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: #111;
+            box-shadow: 0 0 10px #0ff, 0 0 20px #0ff inset;
+            transition: 0.3s ease-in-out;
+        }
+
+        footer .social img {
+            width: 70%;
+            height: 70%;
+            margin: 15%;
+            object-fit: contain;
+        }
+
+        /* Hover Effect */
+        footer .social:hover {
+            transform: scale(1.2) rotate(10deg);
+            box-shadow: 0 0 20px #0ff, 0 0 40px #0ff inset;
+        }
+
+        /* Footer Text */
+        footer p {
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            color: #aaa;
+        }
+    </style>
+
     <script src="/script.js"></script>
+    <script src="/smoke.js"></script>
+
 
 </body>
 
